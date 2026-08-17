@@ -8,6 +8,20 @@
   <title>SYVRA | Premium Face Wash Store</title>
   <link rel="icon" href="assets/syvra-logo.jpg" type="image/jpeg" />
   <link rel="stylesheet" href="style.css" />
+
+<style id="syvra-logo-fix">
+.site-logo-img{
+  display:block !important;
+  width:150px !important;
+  height:auto !important;
+  max-height:70px !important;
+  object-fit:contain !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+.site-logo-wrap{display:flex;align-items:center;padding:10px 16px;}
+</style>
+
 </head>
 <body>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
@@ -22,7 +36,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="SYVRA Home">
-        <img src="assets/syvra-logo.jpg" alt="SYVRA logo" />
+        <img class="site-logo-img" src="assets/syvra-logo.jpg" alt="SYVRA Logo" loading="eager">
         <span>SYVRA</span>
       </a>
 
