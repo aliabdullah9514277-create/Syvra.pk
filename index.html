@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080808" />
+  <meta name="description" content="SYVRA — premium face care online store." />
+  <title>SYVRA | Premium Face Wash Store</title>
+  <link rel="icon" href="assets/syvra-logo.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Premium skincare • Secure checkout • Fast order confirmation</span>
+      <span class="topbar-right">SYVRA Official Store</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="SYVRA Home">
+        <img src="assets/syvra-logo.jpg" alt="SYVRA logo" />
+        <span>SYVRA</span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">☰</button>
+
+      <nav id="mainNav" class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <button class="nav-link-btn" id="accountBtn">Account</button>
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+          Cart <span id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="syvra-ad" id="syvraAd" aria-label="SYVRA special offer">
+  <button class="syvra-ad-close" id="closeSyvraAd" aria-label="Close offer">×</button>
+  <div class="syvra-ad-shine"></div>
+  <div class="syvra-ad-icon">S</div>
+  <div class="syvra-ad-copy">
+    <span>SYVRA SPECIAL</span>
+    <strong>Premium Skin Care</strong>
+    <small>Shop the signature collection today.</small>
+  </div>
+  <a href="#shop" class="syvra-ad-btn">Shop Now</a>
+</div>
+
+<main id="home">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">SYVRA • SIGNATURE SKINCARE</p>
+          <h1>Clean skin.<br><span>Luxury feel.</span></h1>
+          <p class="hero-text">
+            A premium black-and-gold skincare experience inspired by the SYVRA identity.
+            Discover gentle daily cleansing essentials with a polished online-store experience.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#shop">Shop Collection</a>
+            <button class="btn btn-outline" id="heroAccountBtn">Sign in</button>
+          </div>
+          <div class="trust-row">
+            <div><strong>✓</strong><span>Secure checkout</span></div>
+            <div><strong>✓</strong><span>Order confirmation</span></div>
+            <div><strong>✓</strong><span>WhatsApp support</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-ring"></div>
+          <img src="assets/syvra-logo.jpg" alt="SYVRA premium logo" />
+          <div class="hero-card-label">SYVRA<br><small>FACE CARE</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <div class="container feature-grid">
+        <div><span>✦</span><div><strong>Premium look</strong><small>Black & gold signature design</small></div></div>
+        <div><span>◈</span><div><strong>Simple checkout</strong><small>Customer details in one flow</small></div></div>
+        <div><span>✓</span><div><strong>Order tracking</strong><small>Saved order ID on this device</small></div></div>
+        <div><span>☏</span><div><strong>WhatsApp confirmation</strong><small>Ready-to-send order message</small></div></div>
+      </div>
+    </section>
+
+    <section id="shop" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE COLLECTION</p>
+            <h2>Shop SYVRA</h2>
+          </div>
+          <div class="shop-tools">
+            <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products" />
+            <select id="categoryFilter" aria-label="Filter products">
+              <option value="all">All products</option>
+              <option value="face-wash">Face Wash</option>
+              <option value="care">Skin Care</option>
+              <option value="bundle">Bundles</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="productGrid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-logo-card">
+          <img src="assets/syvra-logo.jpg" alt="SYVRA logo" />
+        </div>
+        <div>
+          <p class="eyebrow">THE SYVRA STANDARD</p>
+          <h2>Designed to feel like a premium brand from the first click.</h2>
+          <p>
+            SYVRA combines a luxury black-and-gold visual identity with a clean shopping journey:
+            browse, add to cart, enter delivery details, review the order, and confirm it through WhatsApp.
+          </p>
+          <div class="about-points">
+            <div><b>01</b><span>Responsive store for mobile, tablet and desktop.</span></div>
+            <div><b>02</b><span>Cart, checkout, validation and order history.</span></div>
+            <div><b>03</b><span>Google sign-in integration scaffold using Firebase Authentication.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">HELP</p><h2>Frequently asked</h2></div>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>How does order confirmation work?</summary>
+            <p>After checkout, SYVRA generates a unique order ID and opens WhatsApp with a pre-filled order summary. The customer taps Send to deliver the order to your WhatsApp.</p>
+          </details>
+          <details>
+            <summary>Can customers sign in with Google?</summary>
+            <p>Yes. The site includes Firebase Google Authentication wiring. Add your own Firebase web configuration in script.js and enable Google in Firebase Authentication.</p>
+          </details>
+          <details>
+            <summary>Will the store work on GitHub Pages?</summary>
+            <p>Yes for the storefront, cart, checkout and WhatsApp flow because they are client-side. Google authentication requires a Firebase project and your live domain added to Firebase's authorized domains.</p>
+          </details>
+          <details>
+            <summary>Are payment details stored?</summary>
+            <p>This starter store does not collect card numbers. It is designed to avoid putting sensitive payment secrets in frontend JavaScript. Add a trusted payment provider later if you need online payments.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">SYVRA</div>
+        <p>Premium face care, presented with a signature black-and-gold identity.</p>
+      </div>
+      <div>
+        <h4>Store</h4>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <h4>Customer</h4>
+        <button class="footer-btn" id="footerAccountBtn">My Account</button>
+        <button class="footer-btn" id="footerOrdersBtn">My Orders</button>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p class="support-note">WhatsApp order confirmation is available after checkout.</p>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> SYVRA. All rights reserved.</div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div id="cartOverlay" class="overlay hidden"></div>
+  <aside id="cartDrawer" class="drawer" aria-label="Shopping cart">
+    <div class="drawer-head">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" id="closeCartBtn" aria-label="Close cart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <div><span>Subtotal</span><strong id="cartSubtotal">PKR 0</strong></div>
+      <div><span>Delivery</span><strong id="cartDelivery">PKR 0</strong></div>
+      <div class="total-row"><span>Total</span><strong id="cartTotal">PKR 0</strong></div>
+      <button id="checkoutBtn" class="btn btn-gold full">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Account modal -->
+  <div id="accountModal" class="modal hidden">
+    <div class="modal-card account-card">
+      <button class="modal-close" data-close="accountModal">×</button>
+      <div class="account-logo"><img src="assets/syvra-logo.jpg" alt="SYVRA" /></div>
+      <p class="eyebrow">SYVRA ACCOUNT</p>
+      <h3 id="accountTitle">Welcome back</h3>
+      <p id="accountSub">Sign in to keep your account details available on this device.</p>
+      <div id="accountLoggedOut">
+        <button id="googleSignInBtn" class="google-btn"><span>G</span> Continue with Google</button>
+        <div class="divider"><span>or</span></div>
+        <form id="emailAuthForm">
+          <label>Email<input id="emailInput" type="email" autocomplete="email" required placeholder="you@example.com" /></label>
+          <label>Password<input id="passwordInput" type="password" autocomplete="current-password" minlength="6" required placeholder="Minimum 6 characters" /></label>
+          <button class="btn btn-gold full" type="submit">Create / Sign in</button>
+        </form>
+        <p class="small-note">Email mode is local-only in this starter unless you connect Firebase Email/Password Authentication.</p>
+      </div>
+      <div id="accountLoggedIn" class="hidden">
+        <div class="profile-box">
+          <div class="avatar" id="profileAvatar">S</div>
+          <div><strong id="profileName">Customer</strong><small id="profileEmail">—</small></div>
+        </div>
+        <button id="signOutBtn" class="btn btn-outline full">Sign out</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout modal -->
+  <div id="checkoutModal" class="modal hidden">
+    <div class="modal-card checkout-card">
+      <button class="modal-close" data-close="checkoutModal">×</button>
+      <div class="checkout-progress">
+        <span class="active">1 Details</span><span>2 Review</span><span>3 Confirm</span>
+      </div>
+      <p class="eyebrow">SECURE ORDER</p>
+      <h3>Delivery details</h3>
+      <form id="checkoutForm">
+        <div class="form-grid">
+          <label>Full name<input id="customerName" required maxlength="80" autocomplete="name" /></label>
+          <label>Phone<input id="customerPhone" required inputmode="tel" maxlength="20" autocomplete="tel" placeholder="03XX-XXXXXXX" /></label>
+          <label class="span-2">Email<input id="customerEmail" type="email" required autocomplete="email" placeholder="you@example.com" /></label>
+          <label class="span-2">Address<textarea id="customerAddress" required maxlength="300" rows="3" autocomplete="street-address"></textarea></label>
+          <label>City<input id="customerCity" required maxlength="60" autocomplete="address-level2" /></label>
+          <label>Postal code<input id="customerPostal" maxlength="12" inputmode="numeric" /></label>
+          <label class="span-2">Payment method
+            <select id="paymentMethod" required>
+              <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+          </label>
+        </div>
+        <label class="consent"><input id="termsCheck" type="checkbox" required /> I confirm my delivery details are correct.</label>
+        <div id="checkoutError" class="form-error" role="alert"></div>
+        <button id="reviewOrderBtn" class="btn btn-gold full" type="submit" disabled>Review Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Review modal -->
+  <div id="reviewModal" class="modal hidden">
+    <div class="modal-card review-card">
+      <button class="modal-close" data-close="reviewModal">×</button>
+      <p class="eyebrow">FINAL REVIEW</p>
+      <h3>Confirm your order</h3>
+      <div id="reviewCustomer" class="review-customer"></div>
+      <div id="reviewItems" class="review-items"></div>
+      <div class="review-total"><span>Total</span><strong id="reviewTotal">PKR 0</strong></div>
+      <div class="secure-note">🔒 Your card number is not collected by this site.</div>
+      <button id="confirmOrderBtn" class="btn btn-gold full">Confirm & Continue to WhatsApp</button>
+      <button class="text-btn" data-close="reviewModal">Edit details</button>
+    </div>
+  </div>
+
+  <!-- Order success / WhatsApp handoff -->
+  <div id="successModal" class="modal hidden">
+    <div class="modal-card success-card">
+      <div class="success-icon">✓</div>
+      <p class="eyebrow">ORDER CREATED</p>
+      <h3>Order <span id="successOrderId"></span></h3>
+      <p>Your order is saved on this device. WhatsApp is ready with the complete order message.</p>
+      <div class="order-code" id="successSummary"></div>
+      <a id="closeSuccessBtn" class="btn btn-gold full" href="#" target="_blank" rel="noopener noreferrer">Done</a>
+    </div>
+  </div>
+
+  <!-- Orders modal -->
+  <div id="ordersModal" class="modal hidden">
+    <div class="modal-card orders-card">
+      <button class="modal-close" data-close="ordersModal">×</button>
+      <p class="eyebrow">ORDER HISTORY</p>
+      <h3>My orders</h3>
+      <div id="ordersList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

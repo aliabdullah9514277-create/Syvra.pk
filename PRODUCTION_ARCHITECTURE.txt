@@ -1,0 +1,21 @@
+# SYVRA production integration notes
+
+Recommended production architecture:
+
+Customer browser
+    |
+    | HTTPS
+    v
+Static SYVRA frontend
+    |
+    +--> Firebase Authentication (Google)
+    |
+    +--> Secure backend / Cloud Function
+              |
+              +--> Firestore orders
+              |
+              +--> Meta WhatsApp Cloud API
+              |
+              +--> Payment provider
+
+Keep all private API tokens on the backend.

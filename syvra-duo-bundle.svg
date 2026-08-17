@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#1d1d1d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6d878"/>
+      <stop offset="50%" stop-color="#b88a2b"/>
+      <stop offset="100%" stop-color="#f4d06a"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-opacity=".45"/></filter>
+  </defs>
+  <rect width="800" height="800" rx="48" fill="url(#bg)"/>
+  <circle cx="400" cy="400" r="285" fill="none" stroke="url(#gold)" stroke-opacity=".18" stroke-width="2"/>
+  <circle cx="400" cy="400" r="230" fill="none" stroke="url(#gold)" stroke-opacity=".10" stroke-width="2"/>
+  <g filter="url(#shadow)">
+    <rect x="270" y="205" width="260" height="55" rx="16" fill="#111"/>
+    <rect x="292" y="235" width="216" height="55" rx="14" fill="url(#gold)"/>
+    <rect x="245" y="270" width="310" height="380" rx="48" fill="#111" stroke="url(#gold)" stroke-width="5"/>
+    <rect x="270" y="335" width="260" height="210" rx="24" fill="#171717" stroke="#b88a2b" stroke-opacity=".65"/>
+    <text x="400" y="382" text-anchor="middle" fill="#f6d878" font-family="Arial,sans-serif" font-size="42" font-weight="700" letter-spacing="5">SYVRA</text>
+    <text x="400" y="430" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="600">DUO BUNDLE</text>
+    <line x1="330" y1="458" x2="470" y2="458" stroke="#b88a2b" stroke-width="2"/>
+    <text x="400" y="493" text-anchor="middle" fill="#d6d6d6" font-family="Arial,sans-serif" font-size="18">Cleanse + Glow</text>
+  </g>
+  <text x="400" y="720" text-anchor="middle" fill="#f6d878" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">SYVRA OFFICIAL STORE</text>
+</svg>
